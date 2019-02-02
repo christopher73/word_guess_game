@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/assest/css/style.css" />
-    <script src="/assest/javascript/game.js"></script>
+    <link rel="stylesheet" href="./assest/css/style.css" />
   </head>
   <body>
     <h1>guess your basketball player</h1>
@@ -11,49 +10,6 @@
     <p id="p3"></p>
     <p id="p4"></p>
     <p id="p5"></p>
-
-    <script type="text/javascript">
-      let words = ["Jose1", "Luis2", "Noel3", "Mike4"];
-      var word = words[Math.floor(Math.random() * words.length)];
-      //math random picks a randon number between 0 to 1
-      var guess_text = document.getElementById("guess_text");
-      var line_text = document.getElementById("line_text");
-
-      // This function is run whenever the user presses a key.
-      document.onkeyup = function(event) {
-        // Determines which key was pressed.
-        //var userGuess = event.key;
-
-        guess_text.textContent = "Click a letter to start guessing";
-
-        var tries = word.length;
-
-        /*      
-      for (var i = 0; i < drinkList.length; i++) {
-        var newElement = document.createElement("h1"); // documentElement() creates a html element "h1"
-        newElement.textContent = drinkList[i]; // textContent outputs text creating a new h1 to put the array's element
-        drink_div.appendChild(newElement); // the drink_div we declared we insert a "child element" which is new Element
-      }
-      
-       for (var j = 0; j < secret_word.length; j++) {
-        if (userGuess === secret_word[j]) {
-          line[j] = secret_word[j];
-        }
-      }
-
-       */
-
-        var secret_word = word.split("");
-        var line = [];
-
-        for (var i = 0; i < secret_word.length; i++) {
-          line[i] = "_";
-        }
-
-        //var userGuess = event.key;
-
-        line_text.textContent = line.join(" "); //output "_"
-      };
-    </script>
+    <script type="text/javascript" src="./assest/javascript/game.js"></script>
   </body>
 </html>
