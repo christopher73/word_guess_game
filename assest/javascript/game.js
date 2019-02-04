@@ -16,7 +16,7 @@ console.log(pokemons[0].name);
 var guess_text = document.getElementById("guess_text");
 var line_text = document.getElementById("line_text");
 var score = document.getElementById("score");
-guess_text.textContent = "Click a letter to start guessing !!!";
+guess_text.textContent = "Press a letter to start guessing !!!";
 
 function game() {
   var word = pokemons[Math.floor(Math.random() * pokemons.length)]; //math random picks a randon number between 0 to 1
