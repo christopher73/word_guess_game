@@ -54,7 +54,7 @@ function game() {
         //console.log(word.img);
         life--;
       }
-    } else score.textContent = "YOU LOST !!!";
+    } else score.textContent = "Press the Reload to play AGAIN !!!";
   };
 }
 
