@@ -49,7 +49,7 @@ function game() {
         life = 0;
       } else {
         line_text.textContent = line.join(" ");
-        score.textContent = "You have " + life + " more tries";
+        score.textContent = "You have " + life + " more tries.";
         document.getElementById("img").src = word.img;
         //console.log(word.img);
         life--;
